@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <title>Tree Art | stark team</title>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="800"> </canvas>
+    <div class="inputs">
+        <table>
+            <tr>
+                <td>Propogation</td>
+                <td>
+                    <input type="number" onchange="changepro(this.value)" min="2" value="8">
+                </td>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>
+                    <input type="number" onchange="changeAngleIncrement(this.value)"
+                    onmousedown="changeAngleIncrement(this.value)"
+                    onkeypress="changeAngleIncrement(this.value)"
+                    min="0"
+                    value="50">
+                </td>
+            </tr>
+            <tr>
+                <td>Thickness</td>
+                <td>
+                    <input type="number" onchange="changeThickness(this.value)"min="0" value="2">
+                </td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>
+                    <input type="color" value="#ffffff" id="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Venkatesananda - Jesse Gallagher</td>
+                <td>
+                    <audio controls controlsList="nodownload noplaybackrate">
+                        <source src="Venkatesananda - Jesse Gallagher.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element
+                    </audio>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        Made with ❤️ by
+        <a class="github" href="https://github.com/aliashtab77/"
+        target="_blank">
+    Stark team</a>
+    <span>
+        <a href="https://www.youtube.com/channel/UCI4K55XFGR9GkGWDiOpH_MQ"
+        target="_blank">
+            <img src="yt.png" width="30px"/>
+    </a>
+    </span>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
